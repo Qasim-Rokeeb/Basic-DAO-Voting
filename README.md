@@ -138,32 +138,6 @@ contract BasicDAOVoting {
 }
 ```
 
-## 🚀 Deployment Instructions
-
-### 1. Smart Contract Deployment
-
-```bash
-# Install dependencies
-npm install --save-dev hardhat @nomicfoundation/hardhat-toolbox
-
-# Create Hardhat config for Base Sepolia
-# hardhat.config.js
-module.exports = {
-  solidity: "0.8.19",
-  networks: {
-    baseSepolia: {
-      url: "https://sepolia.base.org",
-      accounts: [process.env.PRIVATE_KEY],
-      chainId: 84532,
-    },
-  },
-};
-
-# Deploy contract
-npx hardhat run scripts/deploy.js --network baseSepolia
-```
-
-### 2. Frontend Setup
 
 ```bash
 # Install dependencies
